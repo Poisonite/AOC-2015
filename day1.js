@@ -6,16 +6,16 @@ function day1a() {
     var firstNegative;
 
     //take every char in input and seperate by comma into an array
-    for(var i = 0; i < input.length; i++){
+    for (var i = 0; i < input.length; i++) {
         array.push(input.charAt(i));
     }
     // console.log({array});
-    for(var i = 0; i < array.length; i++){
-        if(array[i] === "("){
-            floor ++;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === "(") {
+            floor++;
         }
-        else{
-            floor --;
+        else {
+            floor--;
         }
         // console.log("floor" + floor);
     }
@@ -30,23 +30,22 @@ function day1b() {
     var firstNegative;
 
     //take every char in input and seperate by comma into an array
-    for(var i = 0; i < input.length; i++){
+    for (var i = 0; i < input.length; i++) {
         array.push(input.charAt(i));
     }
     // console.log({array});
-    for(var i = 0; i < array.length; i++){
-        if(array[i] === "("){
-            floor ++;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === "(") {
+            floor++;
         }
-        else{
-            floor --;
+        else {
+            floor--;
         }
-        if(floor < 0){
+        if (floor < 0) {
             firstNegative = i + 1;
-            console.log("first negative " + firstNegative);
+            // console.log("first negative " + firstNegative);
             output.innerHTML = firstNegative;
             return;
-
         }
     }
 }
