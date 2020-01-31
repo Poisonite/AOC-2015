@@ -40,6 +40,12 @@ function day2a() {
     myValues.output.innerHTML = solution; // outputs the solution calculalted in the second for loop to the output html box
 }
 
+function day2b() {
+
+    var myValues = getValues(); //imports base values from the getValues() function
+
+}
+
 // Imports basic var data that's useful to other functions
 function getValues() {
 
