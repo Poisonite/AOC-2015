@@ -47,6 +47,9 @@ function day1b() {
     }
 }
 
+
+// !!!: Pure Function Section
+
 function getValues() {
 
     //Vars that are passed into the values object and then called out of the values object in other functions
